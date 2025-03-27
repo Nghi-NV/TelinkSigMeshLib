@@ -6,11 +6,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://www.telink-semi.com'
   s.license          = { :type => 'Commercial', :text => 'Commercial' }
   s.author           = { 'Telink' => 'telink-semi.com' }
-  s.source           = { :git => 'https://github.com/Nghi-NV/TelinkSigMeshLib.git' }
-  s.platform         = :ios, '11.0'
+  s.source           = { :git => 'https://github.com/Nghi-NV/TelinkSigMeshLib.git', :tag => s.version.to_s }
+  s.platform         = :ios, '12.0'
   
-  s.source_files = 'Sources/**/*'
-  s.public_header_files = 'Sources/**/*.h'
+  s.source_files = 'TelinkSigMeshLib/**/*.{h,m,swift}'
+  s.public_header_files = 'TelinkSigMeshLib/**/*.h'
   
   s.frameworks = 'Foundation', 'CoreBluetooth'
   s.library = 'z'
